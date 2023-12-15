@@ -1,12 +1,11 @@
 import create from "zustand";
-import mock from "../mock.json";
 
 const store = create((set, get) => ({
   url: "https://urxbdkupvxmm4uroj7ku37ygnq0qqkdf.lambda-url.us-east-1.on.aws/",
 
-  recap: mock,
+  recap: null,
   setRecap: (recap) => set(() => ({ recap })),
-  username: "ademilter",
+  username: "",
   setUsername: (username) => set(() => ({ username })),
   loading: false,
   setLoading: (state) => set(() => ({ loading: state })),
