@@ -53,15 +53,15 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (!data.top_photos) {
-          alert("This user has no photos in 2023.");
+        if (data.message) {
+          alert(data.message);
           setLoading(false);
           return;
         }
         setRecap(data);
         setLoading(false);
       }).catch((error) => {
-        alert("Enter a valid username");
+        alert("Something went wrong. Please try again later.");
         setLoading(false);
       });
   };
