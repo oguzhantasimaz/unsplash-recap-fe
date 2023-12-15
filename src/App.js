@@ -53,8 +53,8 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message) {
-          alert(data.message);
+        if (data?.message) {
+          alert(data?.message);
           setLoading(false);
           return;
         }
