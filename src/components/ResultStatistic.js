@@ -16,7 +16,7 @@ export default function ResultStatistic() {
 
 const Box = ({ title, value }) => {
   return (
-    <div className="rounded-xl bg-gray-100 p-4">
+    <div className="rounded-xl bg-gray-100 p-5 flex flex-col items-center justify-center gap-1">
       <p className="opacity-50">{title}</p>
       <p className="text-xl">{value}</p>
     </div>
