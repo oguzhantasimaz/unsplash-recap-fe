@@ -18,7 +18,10 @@ const store = create((set, get) => ({
     try {
       setLoading(true);
 
-      const res = await fetch(url);
+      const res = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify({ username }),
+      });
       const data = await res.json();
 
       if (data?.message) {
