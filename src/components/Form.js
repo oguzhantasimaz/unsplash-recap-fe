@@ -21,7 +21,7 @@ export default function Form() {
         <input
           type="text"
           id="username"
-          placeholder="username"
+          placeholder="Unsplash Username"
           value={username}
           onChange={handleUsernameChange}
         />

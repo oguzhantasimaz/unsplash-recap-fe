@@ -12,11 +12,11 @@ function App() {
     <main className="mx-auto flex h-screen max-w-6xl flex-col px-10 py-20 text-center">
       <h1 className="text-4xl">
         {username ? (
-          <span className="font-semibold">{username}'s</span>
+          <a href={"https://unsplash.com/" + username} target="_blank" className="font-semibold">{username}'s</a>
         ) : (
           "Your"
         )}{" "}
-        2023 Recap
+        2023 Unsplash Recap
       </h1>
       {recap ? <Result /> : <Form />}
       <Footer />
